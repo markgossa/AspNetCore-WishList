@@ -1,4 +1,4 @@
-﻿@Model  WishList.Models.Item
+﻿@model WishList.Models.Item
 
 @{
     ViewData["Title"] = "Create";
@@ -8,7 +8,7 @@
 
 <form asp-action="create">
     <input asp-for="Description" />
-    <span asp-validation-for="Description" />
+    <span asp-validation-for="Description"></span>
     <button type="submit">Add Item</button>
 </form>
 
